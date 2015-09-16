@@ -169,7 +169,7 @@ i {
 
 /*----------Contact-----------*/
 .contact{
-  background-image: url("/Users/kcoulter/Documents/portfolio-website/images/bluemountainsbw.jpg");
+  background-image: url("../images/bluemountainsbw.jpg");
   background-size: cover;
   background-position: center;
   height: 550px;
