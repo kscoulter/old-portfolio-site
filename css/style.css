@@ -209,9 +209,6 @@ footer p {
   .wrapper h1 {
     font-size: 80px;
   }
-  nav li {
-    font-size: 11px;
-  }
   .project .col{
     display:block;
     float:none !important;
