@@ -288,7 +288,8 @@ footer p {
   }
   .wrapper h1 {
     font-size: 70px;
-    margin-top: 40px;
+    margin-top: 70px;
+    line-height: 70px;
   }
   .wrapper h2 {
     font-size: 40px;
