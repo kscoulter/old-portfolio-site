@@ -17,6 +17,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 nav ul {
   float: right;
@@ -96,6 +97,81 @@ nav li a{
   content: "\f0e1"
 }
 
+/*-------Skills--------*/
+.skills h1 {
+  background-color: #0C0C0C;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.graph {
+  margin: 30px 10px;
+}
+.bar{
+  height: 30px;
+  max-width: 1160px;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 25px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.bar::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 0;
+  z-index: -2;
+  background: #ecf0f1;
+}
+.bar::after{
+  content: '';
+  background: #2ecc71;
+  height: 30px;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 2s;
+  -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.html::after{
+  max-width: 95%;
+}
+.css::after{
+  max-width: 70%;
+  background: #89cc2e;
+}
+.js::after{
+  max-width: 80%;
+}
+.rails::after {
+  max-width: 80%;
+  background: #89cc2e;
+}
+.backbone::after{
+  max-width: 70%;
+}
+.git::after{
+  max-width: 90%;
+  background: #89cc2e;
+}
 /*------Portfolio------*/
 .portfolio {
   color: #5F5F5F;
@@ -206,8 +282,13 @@ footer p {
 
 /*-------Media Queries--------*/
 @media (max-width: 700px) {
+  .banner {
+    height: 600px;
+    background-position: left;
+  }
   .wrapper h1 {
-    font-size: 80px;
+    font-size: 70px;
+    margin-top: 30px;
   }
   .project .col{
     display:block;
