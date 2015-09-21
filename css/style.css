@@ -288,7 +288,10 @@ footer p {
   }
   .wrapper h1 {
     font-size: 70px;
-    margin-top: 30px;
+    margin-top: 40px;
+  }
+  .wrapper h2 {
+    font-size: 40px;
   }
   .project .col{
     display:block;
