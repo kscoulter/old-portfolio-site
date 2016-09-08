@@ -90,6 +90,9 @@ nav li a{
 .twitter::before {
   content: "\f099";
 }
+.medium::before {
+  content: "\f23a"
+}
 .github::before {
   content: "\f09b";
 }
